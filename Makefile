@@ -9,3 +9,6 @@ else
 	@echo "Directory '$(ODOO_BASE_DIR)' already exists"
 endif
 
+create_image:
+	bash docker/create_image.sh
+
