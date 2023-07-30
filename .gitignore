@@ -1,2 +1,5 @@
 odoo_base
+database_data
+data_dir
+logs
 

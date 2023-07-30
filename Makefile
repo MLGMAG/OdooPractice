@@ -12,3 +12,13 @@ endif
 create_image:
 	bash docker/create_image.sh
 
+start:
+	docker compose -p odoo_practice -f odoo-docker-compose.yml up -d
+
+stop:
+	docker compose -p odoo_practice -f odoo-docker-compose.yml down
+
+restart:
+	make stop
+	make start
+
