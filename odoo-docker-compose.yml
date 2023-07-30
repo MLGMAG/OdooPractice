@@ -6,6 +6,7 @@ services:
       - ./docker/odoo.conf:/etc/odoo/odoo.conf
       - ./logs/:/opt/odoo/log/
       - ./data_dir/:/opt/odoo/data_dir/
+      - ./addons/:/mnt/odoo/addons/
     networks:
       - odoo-network
     ports:
